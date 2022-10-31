@@ -10,6 +10,7 @@
 
 </head>
 <body>
+    <div class="container row">
     <center>
         <?php
         if(isset($_GET['message'])){
@@ -40,5 +41,6 @@
         </div>
     </div>
 </form>
+    </div>
 </body>
 </html>

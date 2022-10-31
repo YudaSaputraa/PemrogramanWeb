@@ -4,7 +4,7 @@ include 'connecting.php';
 
 
 $username = $_POST['username'];
-$password = $_POST['username'];
+$password = $_POST['password'];
 
 $sqlku = "SELECT * FROM admin WHERE username = '$username' and password = '$password'";
 $data = mysqli_query($connect, $sqlku);
@@ -16,7 +16,7 @@ if($check > 0 ){
     $_SESSION['status'] = "login";
     header("location:readData.php");
 }else{
-    header("location:index.php?message=failed");
+    header("location:login.php?message=failed");
 }
 
 ?>
