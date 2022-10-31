@@ -7,7 +7,9 @@ $sql = mysqli_query($connect, "DELETE FROM data_mhs where nim = $nim ");
 
 
 if($sql){
-    echo "Proses Hapus Berhasil. <a href ='readData.php'>lihat data</a>";
+    sleep(3);
+    header("location:readData.php");
+    die();
 }else{
 echo "proses hapus gagal";
 }

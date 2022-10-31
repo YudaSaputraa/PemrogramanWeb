@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+body{
+    background-color : rgb(53, 51, 51);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+    font-family: 'roboto', sans-serif;
+}
+.home-body{
+    background-color : rgb(172, 126, 216);
+    margin: 0;
+    padding: 0;
+    /* height: 600px; */
+    top: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'roboto', sans-serif;
+}
+.login{
+    background-color: blueviolet;
+    width: 350px;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.login h2{
+    font-family: 'roboto', 'serif';
+    margin: 0 0 20px;
+    width: 100%;
+    margin-bottom: 25px;
+
+}
+
+.login .inputan{
+    font-family: 'roboto';
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.login .inputan input{
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 18px;
+}
+.login .inputan span{
+ position: absolute;
+ top: 14px;
+ left: 20px;
+ padding: 0px;
+ text-transform: capitalize;
+ background-color: transparent;
+ transition: 0.5s;
+}
+
+.login .inputan input:focus ~ span,
+.login .inputan input:valid ~ span{
+    top: -23px;
+    left: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+
+.login .inputan-button input[type="submit"]{
+font-family: 'roboto';
+font-size: 15px;
+background-color: rgb(0, 238, 12);
+border: none;
+text-transform: uppercase;
+font-weight: bold;
+color: white;
+cursor : pointer;
+width: 30%;
+transition: 0.5s;
+}
+.login .inputan-button input[type = "submit"]:hover{
+    width: 80%;
+    background-color: rgb(99, 238, 123);
+    
+    color: black;
+}
+
+.login .inputan-button input{
+    height: 35px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+/* ///////// */
+
+.Form-Prima{
+    background-color: blueviolet;
+    width: 600px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+}
+
+
+.Form-Prima .inputanBilangan{
+    font-family: 'roboto';
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.Form-Prima .inputanBilangan input{
+    height: 40px;
+    width: 60%;
+    padding: 15px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.Form-Prima .inputan-button input[type="submit"]{
+    font-family: 'roboto';
+    font-size: 15px;
+    height: 35px;
+    background-color: rgb(0, 238, 12);
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+    width: 30%;
+    border-radius: 15px;
+    }
+
+
+
+/* //////////// */
+
+.login .icons{
+    left: 10px;
+}
+
+.fContainer{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    background-color: rgb(184, 24, 24);
+
+}
+
+.wrapp{
+    font-size: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: blueviolet;
+    box-shadow:0 7px 15px 0 rgba(37, 17, 56, 0.493);
+
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    font-size :1.5em; 
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.title1{
+color: white;
+font-weight: 700;
+padding-right: 10px;
+}
+
+.title2{
+color: crimson;
+background-color: white;
+border-radius: 10px;
+padding: 1px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navigation > li{
+    list-style-type: none;
+    padding: 15px;
+}
+
+.navigation > li > a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navigation > li > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.navigation > li > img:hover{
+    width:  60px;
+    height: 60px;
+    border-radius: 65px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation > li > a:hover{
+    color: crimson;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.active{
+    background-color: crimson;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+.active:hover{
+    color: white !important;
+
+}
+
+
+.content{
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    font-family: 'roboto';
+    font-weight: bold;
+    /* padding-top: 100px; */
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color :rgb(231, 231, 231);
+}
+.content-prima {
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    font-family: 'roboto';
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color :rgb(231, 231, 231);
+}
+.content-pecahan {
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    padding-top: 70px;
+    font-family: 'roboto';
+    font-weight: bold;
+    align-items: center;
+    height: 100vh;
+    color :rgb(231, 231, 231);
+}
+
+.content .content-center{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-color: red;
+}
+
+.content .nimOfContent{
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+    font-family: 'roboto';
+    font-weight: bold;
+    padding-bottom: 0px;
+    align-items: center;
+    color :white;
+}
+#capt{
+    position: relative;
+    font-size: 13px;
+    color: white;
+}
+
+.Form-kembalian{
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: start;
+    
+}
+.Form-Pecahan{
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 15px;
+    justify-content: start;
+    
+}

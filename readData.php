@@ -17,6 +17,8 @@
 <body>
     <div class="container row">
         <h1>Data Mahasiswa</h1>
+        <a href="tambah.php"><button>Tambah Data</button></a>
+        <a href="logout.php"><button>Logout</button></a><br>
         <table border="1">
             <tr>
                 <th> Nama </th>
@@ -46,6 +48,7 @@
             </tr>
             <?php } ?>
         </table>
+       
     </div>
 </body>
 </html>

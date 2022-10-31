@@ -10,7 +10,7 @@
         $queryku = mysqli_query($connect, $sqlku) or die (mysqli_error($connect));
 
         if($queryku){
-            echo "insert data berhasil <a href ='readData.php'>lihat data</a> ";
+            header("location:readData.php");
            
 
 

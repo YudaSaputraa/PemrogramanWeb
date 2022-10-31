@@ -10,7 +10,7 @@ $sql = mysqli_query($connect, "UPDATE data_mhs SET nama = '$nama', nim = '$nim',
 
 
 if($sql){
-    echo "Proses Hapus Berhasil. <a href ='readData.php'>lihat data</a>";
+    header("location:readData.php");
 }else{
 echo "proses hapus gagal";
 }
